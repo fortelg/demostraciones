@@ -20,17 +20,17 @@
 
 
 \begin{document}
+
+
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 1 %%
 %%%%%%%%%%%%%%%%%
 \section{Demostrar que el cubo de un número impar es también impar}
-
 Debemos de saber la definición de ''impar'':
 \begin{itemize}
 \item Los números pares son los de la forma 2{\textit k}, siendo {\textit k} entero.
 \item Los números impares son los de la forma 2{\textit k}+1, siendo {\textit k} entero.
 \end{itemize}
-
 Por lo tanto,
 si {\textit n} = es impar, \\
 \centerline{$\exists {\textit k}$ tal que n = 2{\textit k}+1.} \\
@@ -41,11 +41,11 @@ Simplificando, tenemos que \\
 Es decir: \\
 \centerline{${\textit n}^{3}$ = $2{\textit k'}+1$. Impar.} \\
 
+
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 2 %%
 %%%%%%%%%%%%%%%%%
 \section{Demostrar que si $ABCD$ es un rombo, las diagonales $AC$ y $BD$ son perpendiculares.}
-
 \begin{figure}[!th]
 \begin{center}
 \includegraphics[width=0.30\textwidth]{rombo.eps}
@@ -53,7 +53,6 @@ Es decir: \\
 \label{fig:rombo}
 \end{center}
 \end{figure}
-
 Sean $ABCD$ los vértices del rombo. Se verifica que, por ser un paralelogramo \\
 \centerline{$\overrightarrow{AB} = \overrightarrow{DC}$}
 \centerline{$\overrightarrow{BC} = \overrightarrow{AD}$}
@@ -67,6 +66,7 @@ Desarrollando la suma por diferencia \\
 \centerline{$\overrightarrow{AC}\cdotp\overrightarrow{BD} = \overrightarrow{BC}\cdotp\overrightarrow{BC} - \overrightarrow{AB}\cdotp\overrightarrow{AB} = {|\overrightarrow{BC}|}^{2}-{|\overrightarrow{AB}|}^{2}$}
 y, por la igualdad entre las longitudes de los lados \\
 \centerline{$\overrightarrow{AC}\cdotp\overrightarrow{BD} = {|\overrightarrow{BC}|}^{2}-{|\overrightarrow{AB}|}^{2} = 0$}
+
 
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 3 %%
@@ -92,17 +92,14 @@ Vamos adelante:\\
 Recordando que $x = y + m$ y $m = - b/2a$, \\
 \centerline{$x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$}
 
+
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 4 %%
 %%%%%%%%%%%%%%%%%
 \section{Demostrar, marcha atrás, que si $x > 0$, entonces $x + \frac{1}{x} \geq 2$}
-
-Partimos de la conclusión. Al simplificarla, vemos la relación con la hipótesis:
-
+Partimos de la conclusión. Al simplificarla, vemos la relación con la hipótesis:\\
 \centerline{$x + \frac{1}{x} \geq 2 \Leftrightarrow x^2+1 \geq 2x \Leftrightarrow x^2-2x+1 \geq 0 \Leftrightarrow {(x-1)}^2 \geq 0$}
-
-Gracias a la hipótesis $x > 0$, hemos podido establecer la equivalencia
-
+Gracias a la hipótesis $x > 0$, hemos podido establecer la equivalencia\\
 \centerline{${(x-1)}^2 \geq 0 \Leftrightarrow \ldots \Leftrightarrow x + \frac{1}{x} \geq 2$}
 
 
@@ -110,14 +107,10 @@ Gracias a la hipótesis $x > 0$, hemos podido establecer la equivalencia
 %% Ejercicio 5 %%
 %%%%%%%%%%%%%%%%%
 \section{Demostrar que si $x$ e $y$ son números reales positivos, entonces $\sqrt{xy}\leq \frac{x+y}{2}$}
-
-Partimos de la conclusión:
-
+Partimos de la conclusión:\\
 \centerline{$\sqrt{xy}\leq \frac{x+y}{2} \Leftrightarrow 4xy \leq {(x+y)}^2 \Leftrightarrow 4xy \leq x^2 + y^2 + 2xy \Leftrightarrow$}
 \centerline{$\Leftrightarrow 0 \leq x^2 + y^2 - 2xy \Leftrightarrow 0 \leq {(x-y)}^2$}
-
-Esta igualdad siempre es cierta, y equivale a la conclusión deseada. La hipótesis importa sólo para asegurar que el radicando sea positivo.
-
+Esta igualdad siempre es cierta, y equivale a la conclusión deseada. La hipótesis importa sólo para asegurar que el radicando sea positivo.\\
 \begin{figure}[!th]
 \begin{center}
 \includegraphics[width=0.30\textwidth]{raizxy.eps}
@@ -125,6 +118,7 @@ Esta igualdad siempre es cierta, y equivale a la conclusión deseada. La hipótesi
 \label{fig:raizxy}
 \end{center}
 \end{figure}
+
 
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 6 %%
@@ -146,10 +140,27 @@ dirección y sentido, es decir cuando las componentes de uno son las del otro por
 Por tanto es cierto que $ab+bc+ca \leq a^2+b^2+c^2$, además esta demostración nos dice que se da la igualdad solamente 
 cuando $a/b=b/c=c/a$ lo que implica en nuestro caso que $a=b=c$.
 
+
+%%%%%%%%%%%%%%%%%
+%% Ejercicio 7 %%
+%%%%%%%%%%%%%%%%%
+\section{Demostrar, por contraposición, que de acuerdo con las reglas del ajedrez, cada peón se mueve a lo sumo, 6 veces.}
+Consideramos un peón cualquiera. Supongamos que se mueve 7 veces o más. Tratamos de llegar a deducir que no hemos cumplido las reglas del ajedrez.
+Tras el primer movimiento el peón se encuentra al menos en la fila tercera. Tras el segundo movimiento se encuentra al menos en la cuarta... 
+Tras el séptimo movimiento se encuentra al menos en la novena,...fuera del tablero.
+
+
+%%%%%%%%%%%%%%%%%
+%% Ejercicio 8 %%
+%%%%%%%%%%%%%%%%%
+\section{Sea $n$ un número entero. Demostrar que si $n^3$ es par, entonces $n$ es par.}
+Demostración por reducción al absurdo. Suponer que $n$ es impar, si aplicamos la solución del problema 1, donde $n^3$ es impar, entonces
+por hipotesis $n^3$ es par. Absurdo.
+
+
 %%%%%%%%%%%%%%%%%
 %% Ejercicio 9 %%
 %%%%%%%%%%%%%%%%%
-\setcounter{section}{8}
 \section{Demostrar que si $c$ es un número impar, la ecuación $n^2 + n - c = 0$ no tiene ninguna solución entera.}
 Demostracion por reduccion al absurdo. Si $c$ impar y existe solucion \\
 \centerline{$n^2 + n = c$ es impar} \\
@@ -161,19 +172,36 @@ Pero si $n$ es impar entonces $n+1$ es par o viceversa, multiplicar algo por un 
 %% Ejercicio 10 %%
 %%%%%%%%%%%%%%%%%%
 \section{Demostrar que $\sqrt{2}$ es irracional.}
-
 Suponemos que $\sqrt{2}$ es racional: $\sqrt{2} = \frac{x}{y}$, siendo ésta fracción irreducible. Entonces,\\
 \centerline{${\textit a}^2 = 2{\textit b}^2 \Rightarrow {\textit a}$ es par $\Rightarrow {\textit a} = 2{\textit k}$ con ${\textit k}$ entero.}
 Sustituyendo:\\
 \centerline{${(2{\textit k})^2} = 2{\textit b}^2 \Rightarrow 4{\textit k}^2 = 2{\textit b}^2 \Rightarrow 2{\textit k}^2 = {\textit b}^2 \Rightarrow {\textit b}^2$ es par.}
 {\textit a} es par y {\textit b} es par. Contradicción con ''La fracción $\frac{a}{b}$ es irreducible''.
 
+
+%%%%%%%%%%%%%%%%%%
+%% Ejercicio 11 %%
+%%%%%%%%%%%%%%%%%%
+\section{Demostrar que los números primos nunca se acaban, siempre hay más.}
+Primero vamos a asumir que la lista de números primos es finita y llegar a una contradicción, luego la lista debe ser infinita.
+Imaginemos una lista que contiene (todos) los primos: \\
+\centerline{$P_1, P_2, P_3, ..., P_n$.}
+Entonces se puede generar otro número $Q$ (mucho mayor) tal que:\\
+\centerline{$Q=(P_1 x P_2 x P_3 x ... x P_n) + 1$}
+Este nuevo número $Q$ puede ser primo o no.  Si es primo, ya tenemos un nuevo primo que no pertenece a la lista original, y por tanto esa lista 
+no era completa. En el caso de que $Q$ no sea primo, forzosamente tendrá que ser divisible por algún número primo que no puede ser uno de los de 
+la lista, ya que al dividir $Q$ por cualquiera de los primos de la lista siempre obtendremos 1 como resto.  Por lo tanto, tiene que existir otro 
+primo $P_{n+i}$
+En cualquiera de los dos casos hemos encontrado un número primo que NO estaba en la lista original.  Ahora podemos añadir este nuevo primo a la 
+lista y repetir el proceso un infinito número de veces. Siempre encontraremos un primo que no está en la lista. \\
+La cantidad de números primos es infinita.
+
+
 %%%%%%%%%%%%%%%%%%
 %% Ejercicio 12 %%
 %%%%%%%%%%%%%%%%%%
 \setcounter{section}{11}
 \section{Demostrar por inducción que para cada número natural $n$ la suma de los $n$ primeros números naturales vale $\frac{n(n+1)}{2}$}
-
 Vamos a demostrar la propiedad \\
 \centerline{$1+2+3+\ldots+n = \frac{n(n+1)}{2}$}
 \begin{enumerate}
@@ -184,8 +212,55 @@ Asumimos que \\
 \centerline{$1+2+3+\ldots+n -1 = \frac{n(n-1)}{2}$}
 Vamos a a calcular \\
 \centerline{$1+2+3+\ldots+n = (1+2+3+\ldots+n-1) + n = \frac{n(n-1)}{2} + n = \frac{n(n-1)+2n}{2} = \frac{n(n+1)}{2}$}
-
 \end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%
+%% Ejercicio 13 %%
+%%%%%%%%%%%%%%%%%%
+\section{Demostrar que para cada número natural $n$ distinto de 1 se verifica que $n$ es primo o se puede representar como producto de números primos.}
+Demostración por inducción. La hipótesis es cierta en el caso $n = 2$. Supongamosla cierta para $n \leq m$ y probemos que $m + 1$ es un producto de primos.
+Si tenemos tanta suerte que $m + 1$ es primo, entonces no hay nada que demostrar, en caso contrario, $m + 1$ se podrá escribir de la forma $m + 1 = n_1\cdotp n_2$ con
+$1 < n_1 \cdotp n_2 < m + 1$. Por ser $n_1$ y $n_2$ menores que $m + 1$ y mayores que 1, ambos serán productos de primos y también lo habrá de ser $m + 1$.
+
+
+%%%%%%%%%%%%%%%%%%
+%% Ejercicio 14 %%
+%%%%%%%%%%%%%%%%%%
+\section{Demostrar, por distinción de casos, que si $a$ y $b$ son dos números reales, entonces $|a+b| \leq |a|+|b|$.}
+Partimos de la definición de valor absoluto $|r|$ de un número $r$. \\
+\centerline{$|r| = r$ si $r \geq  0$}
+\centerline{$|r| = -r$ si $r < 0$}
+Luego $|r|$ es siempre $\geq 0$ y siempre $r \leq |r|$.
+Si $a + b \geq 0$ entonces $|a + b| = a + b$.\\ 
+Como $a \leq |a|$ y $b \leq |b|$, se tiene la desigualdad.\\
+Si $a + b < 0$ entonces $|a + b| = -a - b$.\\
+Como $-a \leq |a|$ y $-b \leq |b|$, tambien se tiene la desigualdad.\\
+
+
+%%%%%%%%%%%%%%%%%%
+%% Ejercicio 15 %%
+%%%%%%%%%%%%%%%%%%
+\section{Demostrar que para dos números naturales cualesquiera, $x, y$, es imposible que se verifique que $3x^2 = y^2 + 1$.}
+Puesto que el primer término es múltiplo de 3 es claro
+que $y^2 + 1$ lo debe ser. Entonces $y^2$ no lo puede ser
+y por lo tanto $y$ tampoco. Entonces es de una de las
+dos formas posibles: \\
+$y=3h+1$ o bien $y=3h-1$. Pero en cualquier caso $y^2$ (haciendo cuentas) es de la forma $3k+1$ que nunca puede ser igual a $3x^2$. \\
+\centerline{$y^2 = 9h^2 + 6h + 1 = 3 (3h^2 + 2h) + 1 = 3 * h' + 1$}
+\centerline{$y^2 = 9h^2 + 1 = 3 * (3h^2) + 1 = 3 * h'' + 1$}
+Entonces tenemos \\
+$3x^2=3h + 2$ que no se puede dar ya que $2$ no es multiplo de $3$.
+
+
+%%%%%%%%%%%%%%%%%%
+%% Ejercicio 16 %%
+%%%%%%%%%%%%%%%%%%
+\section{Demostrar que la siguiente proposición es falsa: ''Para tres números enteros no nulos cualesquiera, $x, y, z$, y para cualquier 
+número natural $n \geq 2$, se verifica que $x^n + y^n \neq z^n$''.}
+Demostración por contraejemplo. Nos basta tomar como valores $x = 3$, $y = 4$, $z = 5$ y $n = 2$. Es claro que: \\
+\centerline{$3^2 + 4^2 \neq 5^2$}
+
 
 
 \end{document}
